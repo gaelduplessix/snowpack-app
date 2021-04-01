@@ -1,7 +1,7 @@
-/* This doesn't work: */
+/* This works in webpack, but not in snowpack */
 /* @import url('./block.css'); */
 
-/* This works: */
+/* This works in snowpack, but not in webpack */
 @import url('./dist/css/block.css');
 
 #main {
