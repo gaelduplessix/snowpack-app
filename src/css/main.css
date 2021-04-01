@@ -1,0 +1,11 @@
+/* This doesn't work: */
+/* @import url('./block.css'); */
+
+/* This works: */
+@import url('./dist/css/block.css');
+
+#main {
+  width: 500px;
+  height: 500px;
+  border: 1px solid gray;
+}
