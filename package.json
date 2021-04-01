@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "prettier": "^2.0.5",
-    "snowpack": "^3.0.1"
+    "snowpack": "^3.0.1",
+    "snowpack-plugin-relative-css-urls": "^1.1.1"
   }
 }

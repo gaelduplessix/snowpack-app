@@ -2,7 +2,7 @@
 /* @import url('./block.css'); */
 
 /* This works in snowpack, but not in webpack */
-@import url('./dist/css/block.css');
+@import url('./block.css');
 
 #main {
   width: 500px;
