@@ -1,13 +1,14 @@
 {
   "scripts": {
-    "start": "concurrently \"http-server --port 8081 api\" \"snowpack dev\"",
+    "start": "concurrently \"node api.js\" \"snowpack dev\"",
     "build": "snowpack build",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\""
   },
   "dependencies": {
-    "canvas-confetti": "^1.2.0"
+    "canvas-confetti": "^1.2.0",
+    "nodejs-websocket": "^1.7.2"
   },
   "devDependencies": {
     "http-proxy": "^1.18.1",

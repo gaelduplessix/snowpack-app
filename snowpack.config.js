@@ -21,6 +21,25 @@ module.exports = {
         });
       },
     },
+    {
+      src: '/ws',
+      upgrade: (req, socket, head) => {
+        const defaultWSHandler = (err, req, socket, head) => {
+          if (err) {
+            console.error('proxy error', err);
+            socket.destroy();
+          }
+        };
+
+        proxy.ws(
+          req,
+          socket,
+          head,
+          { hostname: 'localhost', port: 3002 },
+          defaultWSHandler,
+        );
+      },
+    },
   ],
   devOptions: {
     secure: true,
