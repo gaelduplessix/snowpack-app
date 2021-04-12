@@ -24,6 +24,10 @@ module.exports = {
     {
       src: '/ws',
       upgrade: (req, socket, head) => {
+        console.log('Upgrade handler');
+        socket.on('close', () => {
+          console.log('Socket closed');
+        });
         const defaultWSHandler = (err, req, socket, head) => {
           if (err) {
             console.error('proxy error', err);
